@@ -1,0 +1,28 @@
+{
+    "name": "t7systems/blowfish",
+    "description": "Blowfish encryption library",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": ["blowfish", "encryption"],
+    "authors": [
+        {
+            "name": "Nils Reimers",
+            "homepage": "http://www.php-einfach.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Pascal Cremer",
+            "email": "pascal@777-systems.com",
+            "homepage": "http://777-systems.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Blowfish": "src/"
+        }
+    }
+}
