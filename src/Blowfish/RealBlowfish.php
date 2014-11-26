@@ -34,4 +34,16 @@ class RealBlowfish {
     $plaintext = mcrypt_decrypt ( self::CIPHER, $this->key, $ciphertext, self::MODE, $iv );
     return rtrim ( $plaintext, "\0" );
   }
+
+  /**
+   * For the case we need the old BlowFish
+   *
+   * @param number $cbc
+   * @return \Blowfish\Blowfish
+   */
+  public function getLegacyBlowfish($cbc = 0) {
+    $bf = new Blowfish($this->key);
+    $bf->cbc = $cbc;
+    return $bf;
+  }
 }
